@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<a href="/">Wybór roweru</a>
+<a href="/user">Dodawanie użytkownika</a>
+<a href="/terms">Termin wypożczenia roweru</a>
+
+<h1 id="header">Dodany użytkownik:</h1>
+<p class="description" th:text="${user.username}"></p>
+
+<h2>Adres email: </h2>
+<p class="description" th:text="${user.email}"></p>
+
+</body>
+</html>
